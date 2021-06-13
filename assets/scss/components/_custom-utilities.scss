@@ -1,0 +1,49 @@
+/*
+    Social Iocn Styles
+*/
+
+.#{$prefix} {
+    &bg-transparent {
+        background: transparent;
+    }
+    &dark-gray {
+        background: $dark-gray;
+    }
+    &bg-size {
+        &-cover {
+            background-size: cover;
+        }
+    }
+    &bg-center {
+        background-position: center;
+    }
+    &bg-norepeat {
+        background-repeat: no-repeat;
+    }
+    &bg-attacment {
+        &-scroll {
+            background-attachment: scroll;
+        }
+        &-fixed {
+            background-attachment: fixed;
+        }
+    }
+    &dark-red {
+        background: $dark-red;
+    }
+    &light-red {
+        background: $light-red;
+    }
+    &opacity-05 {
+        opacity: 0.5;
+    }
+}
+
+.g-0-minus-col {
+    [class*='col-'],
+    [class^='col-'] {
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+    }
+}

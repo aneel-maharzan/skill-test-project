@@ -1,0 +1,55 @@
+/*
+    Footer Styles
+*/
+
+.#{$prefix} {
+    &footer {
+        &-logo {
+            svg {
+                width: 110px;
+            }
+        }
+        &-nav {
+            @include respond-above(sm) {
+                margin-left: -1.5rem;
+            }
+            li {
+                max-width: 50%;
+                flex-basis: 50%;
+                @include respond-above(sm) {
+                    max-width: 100%;
+                    flex-basis: auto;
+                }
+                a {
+                    letter-spacing: 0.02em;
+                    font-family: $secondary-font-family;
+                    font-size: $global-font-size - 1;
+                    padding: 0.8em 0;
+                    display: block;
+                    @include respond-above(sm) {
+                        padding: 0 1.5rem;
+                        font-size: $global-font-size;
+                    }
+                }
+            }
+        }
+        &--main {
+            .border-top {
+                border-top: 1px solid rgba($color: $white, $alpha: 0.1) !important;
+            }
+        }
+        .container {
+            @include respond-below(xs) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+    &copyright {
+        font-family: $secondary-font-family;
+        font-size: $global-font-size;
+        p {
+            margin: 0;
+        }
+    }
+}

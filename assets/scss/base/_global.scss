@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $global-font-family;
+    font-style: $global-font-style;
+    font-weight: $font-weight-regular;
+    line-height: $global-line-height;
+    color: $global-color;
+    font-size: $global-font-size;
+    background: #F2EFEE;
+}
+
+p {
+    color: $global-color;
+}
+
+a {
+    color: $primary-blue;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $primary-blue;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*
+Bootstrap Resets
+*/
+
+.btn {
+    .btn-check:checked+&,
+    .btn-check:active+&,
+    &:active,
+    &.active,
+    &.dropdown-toggle.show {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &-link {
+        text-decoration: none;
+        color: $dark-gray;
+        font-size: 18px;
+        font-family: $secondary-font-family;
+        font-weight: $font-weight-semi-bold;
+        border-bottom: 1px solid $mild-gray;
+        padding: 0 0 10px 0;
+        border-radius: 0;
+        display: inline-flex;
+        align-items: center;
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+.card {
+    &-text {
+        font-size: $global-font-size+4;
+        font-family: $global-font-family;
+        line-height: 25px;
+        color: $dark-gray;
+        &--small {
+            font-size: $global-font-size;
+        }
+    }
+}
+
+.border-light {
+    border-color: $light-border-color !important;
+}

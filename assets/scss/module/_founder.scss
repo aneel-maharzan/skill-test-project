@@ -1,0 +1,20 @@
+/*
+    Footer Styles
+*/
+
+.#{$prefix} {
+    &founder {
+        &-title {
+            font-size: 24px;
+            @include respond-above(md) {
+                font-size: 42px;
+            }
+        }
+        &-content {
+            padding: 0 1em 1em 1em;
+            @include respond-above(md) {
+                padding: 0 3em 3em 3em;
+            }
+        }
+    }
+}

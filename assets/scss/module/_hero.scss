@@ -1,0 +1,141 @@
+/*
+    Header Styles
+*/
+
+.#{$prefix} {
+    &hero {
+        &--title {
+            font-size: 32px;
+            color: $primary-blue;
+            margin-bottom: 20px;
+            @include respond-above(lg) {
+                font-size: 60px;
+                margin-bottom: 0;
+            }
+        }
+        &-content {
+            padding-bottom: 3em;
+            @include respond-above(lg) {
+                padding-bottom: 10em;
+            }
+            .btn {
+                letter-spacing: 0.02em;
+                border-radius: 2px;
+                padding: 12px 60px 12px 15px;
+                position: relative;
+                font-family: $secondary-font-family;
+                font-weight: $font-weight-semi-bold;
+                font-size: $global-font-size;
+                @include respond-above(lg) {
+                    padding: 15px 80px 15px 25px;
+                }
+                &-outline {
+                    &-secondary {
+                        border-color: $mild-gray;
+                        color: $dark-gray;
+                    }
+                }
+                i {
+                    border-left: 1px solid $mild-gray;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include respond-above(lg) {
+                        width: 50px;
+                    }
+                }
+                &:hover,
+                &:focus {
+                    background: $primary-blue;
+                    color: $white;
+                    border-color: $primary-blue;
+                    i {
+                        border-color: rgba($color: $white, $alpha: 0.3);
+                    }
+                }
+            }
+        }
+        &-img {
+            height: 196px;
+            @include respond-above(sm) {
+                height: 300px;
+            }
+            @include respond-above(md) {
+                height: 400px;
+            }
+            @include respond-above(lg) {
+                height: 565px;
+            }
+            &-space {
+                &-l {
+                    margin-left: 2.5em;
+                    @include respond-above(md) {
+                        margin-left: 5em;
+                    }
+                    @include respond-above(lg) {
+                        margin-left: 10em;
+                    }
+                }
+                &-r {
+                    margin-right: 2.5em;
+                    @include respond-above(md) {
+                        margin-right: 5em;
+                    }
+                    @include respond-above(lg) {
+                        margin-right: 10em;
+                    }
+                }
+                &-t-10 {
+                    margin-top: -4em;
+                    @include respond-above(lg) {
+                        margin-top: -10em;
+                    }
+                }
+                &-t-25 {
+                    margin-top: -4em;
+                    @include respond-above(sm) {
+                        margin-top: -10em;
+                    }
+                    @include respond-above(lg) {
+                        margin-top: -25em;
+                    }
+                }
+            }
+        }
+        &--reversed & {
+            &--title {
+                font-size: 32px;
+                color: $white;
+                margin-bottom: 20px;
+                @include respond-above(lg) {
+                    font-size: 44px;
+                }
+                &-sub {
+                    color: $white;
+                    letter-spacing: 0.05em;
+                    font-weight: $font-weight-semi-bold;
+                }
+            }
+            &--desc {
+                color: $white;
+                letter-spacing: -0.01em;
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        &--header-height {
+            height: 150px;
+            @include respond-above(sm) {
+                height: 250px;
+            }
+            @include respond-above(lg) {
+                height: 470px;
+            }
+        }
+    }
+}

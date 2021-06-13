@@ -1,0 +1,13 @@
+/*
+    Social Iocn Styles
+*/
+
+.#{$prefix} {
+    &social {
+        a {
+            color: $primary-gray;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    }
+}

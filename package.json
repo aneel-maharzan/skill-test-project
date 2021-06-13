@@ -1,0 +1,30 @@
+{
+    "name": "Skill Test Project",
+    "version": "1.0.0",
+    "description": "Html Webiste",
+    "main": "Gruntfile.js",
+    "dependencies": {
+        "cssnano": "^5.0.6",
+        "grunt": "^1.4.1",
+        "grunt-cli": "^1.4.3",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-postcss": "^0.9.0",
+        "grunt-sass": "^3.0.0",
+        "node": "^10.0.0"
+    },
+    "devDependencies": {
+        "@lodder/grunt-postcss": "^3.0.1",
+        "autoprefixer": "^10.2.6",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-cssmin": "^4.0.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify": "^5.0.1",
+        "postcss": "^8.3.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Anil Maharjan",
+    "license": "ISC"
+}

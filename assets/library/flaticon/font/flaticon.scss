@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?cce1a64c9716a44b4d773e12ba58926b") format("truetype"),
+url("./flaticon.woff?cce1a64c9716a44b4d773e12ba58926b") format("woff"),
+url("./flaticon.woff2?cce1a64c9716a44b4d773e12ba58926b") format("woff2"),
+url("./flaticon.eot?cce1a64c9716a44b4d773e12ba58926b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?cce1a64c9716a44b4d773e12ba58926b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "headphones": "\f101",
+    "bag": "\f102",
+    "loupe": "\f103",
+    "user": "\f104",
+    "menu": "\f105",
+    "envelope": "\f106",
+    "right-arrow-angle": "\f107",
+    "down-arrow": "\f108",
+    "up-arrow-angle": "\f109",
+);
+
+.flaticon-headphones:before {
+    content: map-get($flaticon-map, "headphones");
+}
+.flaticon-bag:before {
+    content: map-get($flaticon-map, "bag");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-up-arrow-angle:before {
+    content: map-get($flaticon-map, "up-arrow-angle");
+}

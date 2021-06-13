@@ -1,0 +1,46 @@
+/*
+    Post Styles
+*/
+
+.#{$prefix} {
+    &post {
+        .card {
+            &-body {
+                padding: 30px;
+                @include respond-above(lg) {
+                    padding: 40px;
+                }
+            }
+        }
+        &-meta {
+            color: $primary-gray;
+            font-weight: $font-weight-semi-bold;
+            font-family: $secondary-font-family;
+            margin-bottom: 10px;
+            span {
+                position: relative;
+                padding-left: 35px;
+                &:before {
+                    width: 32px;
+                    height: 1px;
+                    background: $mild-gray;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+            }
+        }
+        &-negative-l {
+            @include respond-above(sm) {
+                margin-left: -1px;
+            }
+        }
+        &-negative-t {
+            @include respond-above(sm) {
+                margin-top: -1px;
+            }
+        }
+    }
+}

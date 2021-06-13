@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Galaxie Copernicus';
+    src: url('GalaxieCopernicus-Book.eot');
+    src: url('GalaxieCopernicus-Book.eot?#iefix') format('embedded-opentype'),
+        url('GalaxieCopernicus-Book.woff2') format('woff2'),
+        url('GalaxieCopernicus-Book.woff') format('woff'),
+        url('GalaxieCopernicus-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

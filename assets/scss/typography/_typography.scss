@@ -1,0 +1,23 @@
+/*-------------------
+	Typography
+--------------------*/
+
+$global-font-size:14px;
+$heading-global-font-size:$global-font-size+4;
+$heading-scale: 6;
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $heading-global-font-size + $heading-scale * (6 - $i);
+    }
+}
+
+h2 {
+    font-family: $global-font-family;
+}
+
+h5 {
+    color: $primary-blue;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.05em;
+    font-family: $secondary-font-family;
+}
